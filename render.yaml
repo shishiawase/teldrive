@@ -12,4 +12,4 @@ envVarGroups:
   - name: teldrive-env
     envVars:
       - key: PORT
-        sync: false
+        value: 6660
