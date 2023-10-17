@@ -10,26 +10,27 @@ services:
 
 envVarGroups:
   - name: teldrive-env
-    - key: ALLOWED_USERS
-      sync: false
-    - key: APP_HASH
-      sync: false
-    - key: APP_ID
-      sync: false
-    - key: CHANNEL_ID
-      sync: false
-    - key: COOKIE_SAME_SITE
-      sync: false
-    - key: DATABASE_URL
-      sync: false
-    - key: HTTPS
-      sync: false
-    - key: JWT_SECRET
-      sync: false
-    - key: LAZY_STREAM_BOTS
-      sync: false
-    - key: PORT
-      sync: false
-    - key: RATE_LIMIT
-      sync: false
+    envVars:
+      - key: ALLOWED_USERS
+        sync: false
+      - key: APP_HASH
+        sync: false
+      - key: APP_ID
+        sync: false
+      - key: CHANNEL_ID
+        sync: false
+      - key: COOKIE_SAME_SITE
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: HTTPS
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: LAZY_STREAM_BOTS
+        sync: false
+      - key: PORT
+        sync: false
+      - key: RATE_LIMIT
+        sync: false
     
