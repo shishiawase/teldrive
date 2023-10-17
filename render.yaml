@@ -6,4 +6,6 @@ services:
       url: ghcr.io/divyam234/teldrive/server
     plan: free
     envVars:
+      - key: PORT
+        value: 8080
       - fromGroup: teldrive-env
