@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: shitel
+    runtime: image
+    image:
+      url: ghcr.io/divyam234/teldrive/server
+    plan: free
+    envVars:
+      - fromGroup: teldrive-env
