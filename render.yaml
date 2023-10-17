@@ -1,9 +1,8 @@
 services:
   - type: web
     name: shi-storage
-    runtime: image
-    image:
-      url: ghcr.io/divyam234/teldrive/server:latest
+    runtime: docker
+    repo: https://github.com/shishiawase/teldrive.git
     plan: free
     envVars:
       - fromGroup: teldrive-env
@@ -12,4 +11,4 @@ envVarGroups:
   - name: teldrive-env
     envVars:
       - key: PORT
-        value: 6660
+        value: 8080
