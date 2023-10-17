@@ -1,5 +1,7 @@
 FROM --platform=${BUILDPLATFORM:-linux/amd64} golang:alpine as builder
 
+RUN touch ./teldrive.db
+
 ARG TARGETPLATFORM
 ARG BUILDPLATFORM
 ARG TARGETOS
